@@ -23,13 +23,13 @@ app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Vremenska prognoza",
-    name: "Farah Avdić",
+    name: "Azem Avdić",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: "o Nama",
+    title: "O Nama",
     name: "Azem Avdić",
   });
 });
@@ -37,7 +37,7 @@ app.get("/about", (req, res) => {
 app.get("/help", (req, res) => {
   res.render("help", {
     title: "Pomoć",
-    name: "Jasmina Avdić",
+    name: "Azem Avdić",
   });
 });
 
