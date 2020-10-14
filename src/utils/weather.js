@@ -1,6 +1,5 @@
 const request = require('request')
 
-
 const forecast = (latitude, longitude, callback) => {
     const url =`http://api.weatherstack.com/current?access_key=c56cc31e2720f92366f8549d61a7c03d&query=${latitude},${longitude}`
    
@@ -10,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         }else if(body.error) {
             callback('Lokaciju nije moguće pronaći na vremenskoj prognozi. Pokušajte ponovo.', undefined)
         }else {
-           callback(undefined, `Trenutna temperatura je ${body.current.temperature}°C, o osjećaj je kao ${body.current.feelslike}°C.`);
+           callback(undefined, `Trenutna temperatura je ${body.current.temperature}°C, a osjećaj je kao ${body.current.feelslike}°C. Relativna vlažnost: ${body.current.humidity}%.`);
         }
 
     })
