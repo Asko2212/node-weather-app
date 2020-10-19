@@ -12,10 +12,12 @@
 
 <body>
 
-    <div class="main-content">
-        {{>header}}
-       
-            <p>Aplikacija za vremensku prognozu</p>
+    <div class="tijelo">
+
+        <div class="main-content">
+            {{>header}}
+
+            <p class="podnaslov">Aplikacija za vremensku prognozu</p>
             <form action="">
                 <input type="text" placeholder="Upišite grad...">
                 <button>Pretraži</button>
@@ -23,11 +25,14 @@
 
             <p id="message-1"></p>
             <p id="message-2"></p>
-        
+
+        </div>
+
+        {{>footer}}
+        <script src="/js/main.js"></script>
+
     </div>
 
-    {{>footer}}
-    <script src="/js/main.js"></script>
 </body>
 
 </html>

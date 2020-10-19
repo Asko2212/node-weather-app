@@ -1,10 +1,14 @@
 body {
+  background-color: #778899;
+}
+
+.tijelo {
   color: #333333;
   font-family: Arial, Helvetica, sans-serif;
   max-width: 650px;
   margin: 0 auto;
   padding: 0 16px;
-
+  background-image: url("/web-server/public/img/jesen.jpg");
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -12,33 +16,47 @@ body {
 
 .main-content {
   flex-grow: 1;
+  background-color: lightslategrey;
+  padding: 20px;
 }
 
-footer {
+.menu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+footer p {
   margin: 16px;
   padding: 16px 0;
-  color: #888888;
+  color: #333333;
   border-top: 1px solid #eeeeee;
+  text-align: center;
 }
 
 header {
   margin-top: 16px;
   margin-bottom: 48px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 50px;
   margin-bottom: 16px;
 }
 
 header a {
-  color: #888888;
+  color: black;
   margin-right: 16px;
   text-decoration: none;
 }
 
 .portrait {
   width: 250px;
+  margin-left: 180px;
 }
 
 main-content {
@@ -46,14 +64,36 @@ main-content {
 }
 
 input {
-border: 1px solid #cccccc;
-padding: 8px;
+  border: 1px solid #cccccc;
+  padding: 8px;
 }
 
 button {
   cursor: pointer;
   padding: 8px;
   border: 1px solid #888888;
-  background: #888888;
-  color: white
+  background: #353d44;
+  color: white;
+}
+
+form {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.podnaslov {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.pozadina {
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+#message-1 {
+  margin-top: 50px;
 }
